@@ -12,8 +12,11 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150504004020) do
 =======
+=======
+>>>>>>> checkpoint-26-SeedData
 ActiveRecord::Schema.define(version: 20150517211752) do
 
   create_table "answers", force: true do |t|
@@ -24,7 +27,10 @@ ActiveRecord::Schema.define(version: 20150517211752) do
   end
 
   add_index "answers", ["Question_id"], name: "index_answers_on_Question_id"
+<<<<<<< HEAD
 >>>>>>> 4b67b34ff3ac57d897c10df8dd61afecfc4dfbb1
+=======
+>>>>>>> checkpoint-26-SeedData
 
   create_table "comments", force: true do |t|
     t.text     "body"
@@ -37,17 +43,24 @@ ActiveRecord::Schema.define(version: 20150517211752) do
 
   create_table "posts", force: true do |t|
 <<<<<<< HEAD
+<<<<<<< HEAD
     t.string   "tite"
 =======
     t.string   "title"
 >>>>>>> 4b67b34ff3ac57d897c10df8dd61afecfc4dfbb1
+=======
+    t.string   "title"
+>>>>>>> checkpoint-26-SeedData
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> checkpoint-26-SeedData
   create_table "questions", force: true do |t|
     t.string   "title"
     t.boolean  "resolved"
@@ -55,5 +68,8 @@ ActiveRecord::Schema.define(version: 20150517211752) do
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
 >>>>>>> 4b67b34ff3ac57d897c10df8dd61afecfc4dfbb1
+=======
+>>>>>>> checkpoint-26-SeedData
 end
