@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150504004020) do
+=======
+ActiveRecord::Schema.define(version: 20150517211752) do
+
+  create_table "answers", force: true do |t|
+    t.text     "body"
+    t.integer  "Question_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "answers", ["Question_id"], name: "index_answers_on_Question_id"
+>>>>>>> 4b67b34ff3ac57d897c10df8dd61afecfc4dfbb1
 
   create_table "comments", force: true do |t|
     t.text     "body"
@@ -23,10 +36,24 @@ ActiveRecord::Schema.define(version: 20150504004020) do
   add_index "comments", ["post_id"], name: "index_comments_on_post_id"
 
   create_table "posts", force: true do |t|
+<<<<<<< HEAD
     t.string   "tite"
+=======
+    t.string   "title"
+>>>>>>> 4b67b34ff3ac57d897c10df8dd61afecfc4dfbb1
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
+=======
+  create_table "questions", force: true do |t|
+    t.string   "title"
+    t.boolean  "resolved"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+>>>>>>> 4b67b34ff3ac57d897c10df8dd61afecfc4dfbb1
 end
