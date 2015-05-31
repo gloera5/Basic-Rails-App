@@ -35,7 +35,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'pry-rails', :group => :development
 # Use unicorn as the app server
 # gem 'unicorn'
-
+gem 'bootstrap-sass'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
