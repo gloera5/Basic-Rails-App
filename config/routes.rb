@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :posts, :advertisement, :welcome
   
   
 
-  get 'welcome/contact'
+   get 'welcome/contact'
 
 
   
