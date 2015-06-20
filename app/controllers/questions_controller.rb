@@ -1,6 +1,6 @@
-class QuestionController < ApplicationController
+class QuestionsController < ApplicationController
   def index
-    @question = Question.all
+    @questions = Question.all
   end
 
   def show
@@ -12,7 +12,7 @@ class QuestionController < ApplicationController
   end
 
   def create
-    @qustion = Question.new(params.require(:question).permit(:title, :body).check_box(:question, :resolved, {}, "yes", "no"))
+    @qustion = Question.new(params.require(:question).permit(:title, :body))
     if @question.save
       flash[:notice] = "Question was saved."
       redirect_to @question
@@ -28,7 +28,7 @@ class QuestionController < ApplicationController
 
   def update
     @question = Question.find(params[:id])
-    if @question.update_attributes(params.require(:question).permit(:title, :body).check_box(:question, :resolved, {}, "yes", "no"))
+    if @question.update_attributes(params.require(:question).permit(:title, :body))
        flash[:notice] = "Question was updated."
        redirect_to @question
      else

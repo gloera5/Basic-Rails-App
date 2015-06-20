@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :posts, :advertisement, :welcome, :question
+  resources :posts, :advertisements, :welcome, :questions
   
   
 
