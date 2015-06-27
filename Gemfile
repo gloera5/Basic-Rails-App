@@ -39,7 +39,7 @@ gem 'pry-rails', :group => :development
 gem 'bootstrap-sass'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'figaro', '1.0'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
