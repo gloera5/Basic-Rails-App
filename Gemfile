@@ -39,11 +39,11 @@ gem 'pry-rails', :group => :development
 gem 'bootstrap-sass'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-<<<<<<< HEAD
+
 gem 'pundit'
 =======
 gem 'figaro', '1.0'
->>>>>>> checkpoint-37-AuthenticationContinued
+
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
