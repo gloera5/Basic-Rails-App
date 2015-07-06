@@ -39,7 +39,7 @@ gem 'pry-rails', :group => :development
 gem 'bootstrap-sass'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'redcarpet'
 gem 'pundit'
 
 gem 'figaro', '1.0'
