@@ -43,7 +43,9 @@ gem 'redcarpet'
 gem 'pundit'
 
 gem 'figaro', '1.0'
-
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
