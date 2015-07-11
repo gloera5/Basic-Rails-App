@@ -11,4 +11,10 @@
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 SENDGRID_PASSWORD: exAmplePa$$
 SENDGRID_USERNAME: myspecialusername
-secret_key_base: <%= ENV["SECRET_KEY_BASE"] %>
+DEVISE_SECRET_KEY: SEcr3tDeV1seK3Y
+AWS_ACCESS_KEY_ID: AKIAIPXZDRFVBFLD5VVA
+ AWS_SECRET_ACCESS_KEY: KXoM14n1SvDMAgNZ/2TfGEeZemRpDFD7aAND74TP
+ development:
+   AWS_BUCKET: basic-rails-app-development
+ production:
+   AWS_BUCKET: basic-rails-app-production
