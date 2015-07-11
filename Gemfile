@@ -41,7 +41,7 @@ gem 'bootstrap-sass'
 # gem 'capistrano-rails', group: :development
 gem 'redcarpet'
 gem 'pundit'
-
+gem 'will_paginate', '~> 3.0.5'
 gem 'figaro', '1.0'
 gem 'carrierwave'
 gem 'mini_magick'
