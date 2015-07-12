@@ -7,14 +7,14 @@
 # stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
 #
 # production:
-#   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
-#   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
+# stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
+# stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 SENDGRID_PASSWORD: exAmplePa$$
 SENDGRID_USERNAME: myspecialusername
 DEVISE_SECRET_KEY: SEcr3tDeV1seK3Y
 AWS_ACCESS_KEY_ID: AKIAIPXZDRFVBFLD5VVA
- AWS_SECRET_ACCESS_KEY: KXoM14n1SvDMAgNZ/2TfGEeZemRpDFD7aAND74TP
- development:
-   AWS_BUCKET: basic-rails-app-development
- production:
-   AWS_BUCKET: basic-rails-app-production
+AWS_SECRET_ACCESS_KEY: KXoM14n1SvDMAgNZ/2TfGEeZemRpDFD7aAND74TP
+development:
+  AWS_BUCKET: basic-rails-app-development
+production:
+  AWS_BUCKET: basic-rails-app-production
