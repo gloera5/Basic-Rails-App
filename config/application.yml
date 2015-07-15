@@ -7,6 +7,7 @@
 # stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
 #
 # production:
+<<<<<<< HEAD
 # stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 # stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 SENDGRID_PASSWORD: exAmplePa$$
@@ -18,3 +19,15 @@ development:
   AWS_BUCKET: basic-rails-app-development
 production:
   AWS_BUCKET: basic-rails-app-production
+=======
+#   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
+#   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
+SENDGRID_PASSWORD: your credential here
+SENDGRID_USERNAME: your credential here
+AWS_ACCESS_KEY_ID: your credential here
+AWS_SECRET_ACCESS_KEY: your credential here
+development:
+  AWS_BUCKET: your credential here
+production:
+  AWS_BUCKET: your credential here
+>>>>>>> checkpoint-45-Pagination
