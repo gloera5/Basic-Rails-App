@@ -1,6 +1,5 @@
 class TopicsController < ApplicationController
   def index
-     @topics = Topic.per_page = 50
      @topics = Topic.paginate(page: params[:page])
      authorize @topics
   end
