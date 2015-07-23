@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :posts, :welcome, :topics
+  resources :posts, :welcome, :topics, :users
    resources :topics do
      resources :posts, except: [:index]
    end
