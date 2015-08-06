@@ -16,3 +16,11 @@
     <% end %>
   </div>
 </div>
+<div class="col-md-4">
+  <% if policy(@comment).new? %>
+  <%= form_for [@topic, @post, @comment] do |f| %>
+  <%= f.text_field :body %>
+  <%= f.submit "Create", class: 'btn btn-success' %>
+  <% end %>
+  <% end %>
+</div>

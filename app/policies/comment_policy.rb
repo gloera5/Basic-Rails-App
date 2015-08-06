@@ -3,9 +3,9 @@ class CommentPolicy < ApplicationPolicy
     user.present? && (record.user == user || user.admin? || user.moderator?)
   end
   def new?
-    user.present? && (record.user == user || user.admin? || user.moderator?)
+    true
   end
   def create?
-    user.present? && (record.user == user || user.admin? || user.moderator?)
+    user.present?
   end
 end

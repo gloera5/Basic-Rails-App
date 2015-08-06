@@ -5,8 +5,9 @@ class PostsController < ApplicationController
 
   def show
      @post = Post.find(params[:id])
-     @post = Comment.find(params[:id])
-     @topic = Topic.find(params[:topic_id])
+     @comment = Comment.new
+     @comments = @post.comments
+     @topic = @post.topic
   end
 
   def new
