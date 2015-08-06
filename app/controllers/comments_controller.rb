@@ -1,6 +1,7 @@
 class CommentsController < ApplicationController
   def create
-    @comment = current_user.commets.build(params.require(:commnet).permit(:body))
+    @comment = current_user.commets.build(params.require(:comment).permit(:body))
+    authorize @comment
   end
   
   def destroy
