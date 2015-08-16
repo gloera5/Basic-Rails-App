@@ -1,12 +1,13 @@
 class CommentsController < ApplicationController
   def create
-    @comment = current_user.commets.build(params.require(:comment).permit(:body))
+    @comment = current_user.comments.build(params.require(:comment).permit(:body))
     authorize @comment
   end
   
   def destroy
-     @post = @topic.posts.find(params[:post_id])
-     @comment = @post.comments.find(params[:id])
+     @comment = Comment.find(params[:id])
+     @post = @comment.post
+     @topic = @post.topic
  
      authorize @comment
      if @comment.destroy
