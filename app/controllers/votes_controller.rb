@@ -10,10 +10,11 @@ class VotesController < ApplicationController
     else
       @vote = current_user.votes.create(value: 1, post: @post)
     end
-
+ 
     # http://apidock.com/rails/ActionController/Base/redirect_to
     redirect_to :back
-    
+   end
+
   private
     
     def load_post_and_vote
@@ -33,5 +34,5 @@ class VotesController < ApplicationController
         authorize @vote, :create?
         @vote.save
      end
-  
+    end
 end

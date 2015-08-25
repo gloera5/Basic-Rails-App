@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
   has_many :posts
   has_many :users
+  has_many :votes
   mount_uploader :avatar, AvatarUploader
   def admin?
    role == 'admin'
