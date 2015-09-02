@@ -1,5 +1,5 @@
 class UsersController < ApplicationController 
-  before_filter :authenticate_user!
+  before_action :authenticate_user!, except: [:show]
 
   def edit
     @user = current_user
@@ -20,5 +20,11 @@ class UsersController < ApplicationController
   
   def user_params
     params.require(:user).permit(:password, :password_confirmation, :name, :avatar, :email_favorites)
+  end
+  
+  def show
+     @user = User.find(params[:id])
+     @posts = @user.posts.visible_to(current_user)
+     @comments = @user.comments
   end
 end  
