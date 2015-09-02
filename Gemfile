@@ -10,6 +10,7 @@ group :production do
 end
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
+  gem 'capybara'
 end
 group :development do
    gem 'sqlite3'
@@ -50,6 +51,6 @@ gem 'mini_magick'
 gem 'fog'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
+ 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
