@@ -22,6 +22,19 @@ require 'rails_helper'
        expect( page ).to have_content(@post.title)
        expect( page ).to have_content(@comment.body)
      end
- 
+     
+     it "shows profile" do
+       before do
+         login_as(@user, scope: :user)
+       end
+       visit user_path(@user)
+         expect(current_path).to eq(user_path(@user))
+       
+       expect( page ).to have_content(@user.name)
+       expect( page ).to have_content(@post.title)
+       expect( page ).to have_content(@comment.body)
+     end
+     
+     
    end
  end
