@@ -49,8 +49,10 @@ gem 'figaro', '1.0'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
+gem 'newrelic_rpm'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
- 
+gem 'puma', group: :production
+gem 'thin', group: :development 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
