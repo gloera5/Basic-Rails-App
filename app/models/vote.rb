@@ -6,11 +6,6 @@ class Vote < ActiveRecord::Base
   
   after_save :update_post
 
-  private
-
-  def update_post
-    post.update_rank
-  end
   
   def up_vote?
     value == 1
@@ -19,4 +14,11 @@ class Vote < ActiveRecord::Base
   def down_vote?
     value == -1
   end
+  
+  private
+  
+  def update_post
+    post.update_rank
+  end
+
 end

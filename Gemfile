@@ -49,6 +49,7 @@ gem 'figaro', '1.0'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
+gem 'factory_girl_rails', '~> 4.0'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
  

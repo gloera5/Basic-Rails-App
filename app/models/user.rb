@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
   has_many :posts
   has_many :users
   has_many :votes
+  has_many :comments
   has_many :favorites, dependent: :destroy
   mount_uploader :avatar, AvatarUploader
   def admin?
