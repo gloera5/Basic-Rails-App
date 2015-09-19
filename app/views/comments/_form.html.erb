@@ -6,3 +6,6 @@
          <% comment.errors.full_messages.each do |msg| %>
            <li><%= msg %></li>
          <% end %>
+<%= form_for [@post, Comment.new], remote: true do |f| %>
+         
+         
